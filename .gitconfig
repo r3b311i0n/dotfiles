@@ -1,0 +1,10 @@
+[user]
+	name = r3b311i0n
+	email = nasashinega@gmail.com
+	signingkey = 2101992856B7ACE0
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg2
+[core]
+	autocrlf = input
