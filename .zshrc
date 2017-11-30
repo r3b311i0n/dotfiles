@@ -193,3 +193,6 @@ SPACESHIP_PROMPT_ORDER=(
 )
 
 alias cls="colorls -r"
+alias disgust-me="fortune limericks | cowsay"
+alias calvin="fortune calvin | cowsay"
+alias chuck="fortune chuck | cowsay"
