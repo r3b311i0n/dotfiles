@@ -197,5 +197,3 @@ alias disgust-me="fortune limericks | cowsay"
 alias calvin="fortune calvin | cowsay"
 alias chuck="fortune chuck | cowsay"
 
-# Switch modem to Network Mode from Storage Mode.
-alias usb_modeswitch-huawei="sudo usb_modeswitch -v 0x12d1 -p 0x14fe -V 0x12d1 -P 0x1506 -M 55534243123456780000000000000011062000000100000000000000000000"
