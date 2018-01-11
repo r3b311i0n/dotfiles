@@ -65,7 +65,7 @@ COMPLETION_WAITING_DOTS="false"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(archlinux battery bundler command-not-found colored-man-pages colorize cp docker dotenv emoji emoji-clock extract gem git-extras git github gitignore gnu-utils gradle history-substring-search history httpie man ng node npm nyan pip python rsync screen shrink-path systemd yarn zsh_reload)
+plugins=(archlinux battery bundler command-not-found colored-man-pages colorize cp docker dotenv emoji emoji-clock extract gem git-extras git github gitignore gnu-utils gradle history-substring-search history httpie man ng node npm nyan pip python react-native rsync screen shrink-path systemd yarn zsh_reload)
 
 
 # User configuration
@@ -197,3 +197,9 @@ alias disgust-me="fortune limericks | cowsay"
 alias calvin="fortune calvin | cowsay"
 alias chuck="fortune chuck | cowsay"
 
+# zsh-autosuggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=242"
+
+# zsh-syntax-highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
