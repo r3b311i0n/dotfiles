@@ -34,5 +34,8 @@ Plug 'mxw/vim-jsx'
 " TypeScript-Vim
 Plug 'leafgarland/typescript-vim'
 
+" vim-github-dashboard
+Plug 'junegunn/vim-github-dashboard'
+let g:github_dashboard = { 'username': 'r3b311i0n', 'password': 'secret' }
 
 call plug#end()
