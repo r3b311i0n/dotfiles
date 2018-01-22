@@ -20,6 +20,7 @@ Plug 'mhinz/vim-startify'
 Plug 'w0rp/ale'
 Plug 'mattn/emmet-vim'
 Plug 'ervandew/supertab'
+Plug 'sbdchd/neoformat'
 
 " deoplete stuff
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
