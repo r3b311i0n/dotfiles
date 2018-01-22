@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+	<mime-type type="application/x-jsx">
+		<glob pattern="*.jsx"/>
+		<alias type="text/x-jsx"/>
+		<comment>JavaScript XML</comment>
+		<sub-class-of type="application/javascript"/>
+	</mime-type>
+</mime-info>
