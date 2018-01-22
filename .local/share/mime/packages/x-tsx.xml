@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+	<mime-type type="application/x-tsx">
+		<glob pattern="*.tsx"/>
+		<alias type="text/x-tsx"/>
+		<comment>TypeScript XML</comment>
+		<sub-class-of type="application/x-typescript"/>
+		<sub-class-of type="text/x-typescript"/>
+	</mime-type>
+</mime-info>
