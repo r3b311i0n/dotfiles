@@ -4,7 +4,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'reasonml-editor/vim-reason-plus'
-Plug 'leafgarland/typescript-vim'
 " Plug 'scrooloose/syntastic'
 Plug 'junegunn/vim-github-dashboard'
 Plug 'scrooloose/nerdtree'
@@ -33,6 +32,7 @@ Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'zchee/deoplete-jedi'
 Plug 'mhartington/nvim-typescript'
+Plug 'HerringtonDarkholme/yats.vim'
 " ternjs
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 
