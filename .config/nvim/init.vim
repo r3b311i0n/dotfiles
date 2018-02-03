@@ -3,6 +3,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/nerdcommenter'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'ianks/vim-tsx'
 Plug 'reasonml-editor/vim-reason-plus'
 " Plug 'scrooloose/syntastic'
 Plug 'junegunn/vim-github-dashboard'
@@ -92,17 +93,19 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " vim-airline
-let g:airline_powerline_fonts = 1
-let g:airline_theme = 'dark'
+let g:airline_powerline_fonts=1
+let g:airline_theme='dark'
 
 " ale
-let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#ale#enabled=1
 
 " molokai theme original bg colour
 let g:molokai_original = 0
+let g:rehash256 = 1
 
-" " gruvbox
+" gruvbox
 " let g:gruvbox_italic=1
+" let g:gruvbox_contrast='soft'
 " set background=dark
 
 syntax on
@@ -112,5 +115,4 @@ set incsearch
 set hlsearch
 set termguicolors
 set hidden
-color molokai
-
+color molokai 
