@@ -12,7 +12,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:$HOME/.gem/ruby/2.5.0/bin:$HOME/.npm-global/bin:$HOME/Android-SDK/tools:$HOME/.cargo/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:$HOME/.gem/ruby/2.5.0/bin:$HOME/.npm-global/bin:$HOME/Android-SDK/tools:$HOME/.cargo/bin:$HOME/.go/bin:$PATH
+
+export GOPATH=$HOME/.go
 
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
@@ -64,7 +66,7 @@ COMPLETION_WAITING_DOTS="false"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(archlinux battery bundler cargo command-not-found colored-man-pages colorize cp docker dotenv extract gem git-extras git github gitignore gnu-utils gradle history-substring-search history httpie man ng node npm nyan pip python react-native rsync rust screen shrink-path systemd yarn zsh_reload)
+plugins=(archlinux battery bundler cargo command-not-found colored-man-pages colorize cp docker dotenv extract gem git-extras git github gitignore gnu-utils go gradle history-substring-search history httpie man ng node npm nyan pip python react-native rsync rust screen shrink-path systemd yarn zsh_reload)
 
 
 # User configuration
