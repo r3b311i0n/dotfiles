@@ -209,6 +209,7 @@ alias disgust-me="fortune limericks | cowsay"
 alias calvin="fortune calvin | cowsay"
 alias chuck="fortune chuck | cowsay"
 alias slt-usage="source ~/venv/bin/activate && slt && deactivate"
+alias git-show-untracked="git ls-files . --exclude-standard --others"
 
 # emoji-cli
 source /usr/share/zsh/plugins/emoji-cli/emoji-cli.zsh
