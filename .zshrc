@@ -16,6 +16,8 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:$HOME/.gem/ruby
 
 export GOPATH=$HOME/.go
 
+export ANDROID_HOME=$HOME/Android-SDK
+
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
 
@@ -210,6 +212,11 @@ alias calvin="fortune calvin | cowsay"
 alias chuck="fortune chuck | cowsay"
 alias slt-usage="source ~/venv/bin/activate && slt && deactivate"
 alias git-show-untracked="git ls-files . --exclude-standard --others"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # emoji-cli
 source /usr/share/zsh/plugins/emoji-cli/emoji-cli.zsh
