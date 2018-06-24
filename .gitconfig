@@ -1,5 +1,5 @@
 [user]
-	name = r3b311i0n
+	name = Amal Karunarathna
 	email = nasashinega@gmail.com
 	signingkey = 2101992856B7ACE0
 [commit]
@@ -8,3 +8,11 @@
 	program = gpg2
 [core]
 	autocrlf = input
+[diff]
+	compactionHeuristic = true
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+	interactive = auto
+	ui = auto
