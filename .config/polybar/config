@@ -51,10 +51,11 @@ modules-left = i3 xwindow
 modules-center = mpd
 modules-right = cpu memory battery temperature eth wlan volume date backlight-acpi powermenu
 
-tray-position = right
-tray-padding = 2
+;tray-position = left
+;tray-padding = 2
 ;tray-transparent = true
 ;tray-background = #0063ff
+;tray-detached = false
 
 ;wm-restack = bspwm
 ;wm-restack = i3
@@ -171,7 +172,7 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
 [module/mpd]
 type = internal/mpd
-format-online = <label-song> <bar-progress> <icon-prev> <icon-stop> <toggle> <icon-next>
+format-online = <label-song> <icon-prev> <icon-stop> <toggle> <icon-next>
 
 icon-prev = 
 icon-stop = 
@@ -185,13 +186,13 @@ icon-repeat = 
 icon-consume = ✀
 
 label-song =   %artist% - %title%
-label-song-maxlen = 25
+label-song-maxlen = 20
 label-song-ellipsis = true
 
 host = 127.0.0.1
 port = 6600
 
-bar-progress-width = 45
+bar-progress-width = 25
 bar-progress-indicator = |
 bar-progress-fill = ─
 bar-progress-empty = ─
@@ -272,9 +273,10 @@ interface = eno1
 interval = 3.0
 
 ;format-connected-underline = #55aa55
-format-connected-prefix = " "
+;format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %local_ip%
+label-connected =  
+label-connected-foreground = ${colors.foreground-alt}
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -299,10 +301,10 @@ format-prefix-foreground = ${colors.foreground-alt}
 label = %date% %time%
 
 [module/volume]
-type = internal/volume
+type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL
+label-volume = 🔈
 label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = "🔇 "
@@ -365,8 +367,8 @@ format-warn = <label-warn>
 format-prefix = "🌡️"
 format-prefix-foreground = ${colors.foreground-alt}
 
-label = %temperature%
-label-warn = %temperature%
+label = %temperature-c%
+label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
 ;ramp-0 = 
