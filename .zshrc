@@ -212,6 +212,7 @@ alias calvin="fortune calvin | cowsay"
 alias chuck="fortune chuck | cowsay"
 alias git-show-untracked="git ls-files . --exclude-standard --others"
 alias mpvx="mpv --gpu-context=auto"
+alias slt-usage="source ~/.venv/bin/activate && slt && deactivate"
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
