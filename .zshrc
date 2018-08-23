@@ -68,7 +68,7 @@ COMPLETION_WAITING_DOTS="false"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(archlinux battery bundler cargo command-not-found colored-man-pages colorize cp docker docker-compose dotenv extract gem git-extras git github gitignore gnu-utils go gradle history-substring-search history httpie man ng node npm nyan pip python react-native rsync rust screen shrink-path systemd zsh_reload)
+plugins=(archlinux battery bundler cargo command-not-found colored-man-pages colorize cp docker docker-compose dotenv extract gem git-extras git github gitignore gnu-utils go gradle history-substring-search history httpie man ng node npm pip python react-native rsync rust screen shrink-path systemd zsh_reload)
 
 
 # User configuration
