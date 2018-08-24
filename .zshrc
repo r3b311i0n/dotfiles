@@ -110,7 +110,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 export VISUAL='nvim'
 
-if [ $TERMINIX_ID ] || [ $VTE_VERSION ]; then
+if [[ $TILIX_ID ]]; then
         source /etc/profile.d/vte.sh
 fi
 
