@@ -166,8 +166,11 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 # bar {
-#         status_command i3status
+#       status_command i3status
 # }
+
+# Move between workspaces
+bindsym $mod+Tab workspace back_and_forth
 
 # dialog boxes
 for_window [window_role="pop-up"] floating enable
@@ -189,13 +192,13 @@ for_window [window_role="task_dialog"] floating enable
 # bindsym XF86AudioPrev exec playerctl previous
 
 # polybar
-exec_always --no-startup-id polybar main
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # rofi
-bindsym $mod+d exec rofi -show run -config /home/r3b311i0n/.config/rofi/config
+bindsym $mod+d exec --no-startup-id rofi -show run -config /home/r3b311i0n/.config/rofi/config
 
 # compton
-exec compton -bc --config /home/r3b311i0n/.config/compton/compton.conf
+exec --no-startup-id compton -bc --config /home/r3b311i0n/.config/compton/compton.conf
 
 # clickpad
 # exec xinput set-prop 13 298 1
