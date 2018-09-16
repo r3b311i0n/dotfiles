@@ -180,12 +180,12 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 
 # Window colours
-# class                 border  backgr. text    indicator child_border
-client.focused          #222d32 #222d32 #F8F8F2 #00bcd4   #282A36
-client.focused_inactive #4A148C #4A148C #F8F8F2 #484e50   #4A148C
-client.unfocused        #282A36 #282A36 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #F8F8F2 #900000   #900000
-client.placeholder      #000000 #0c0c0c #F8F8F2 #000000   #0c0c0c
+# class                 border    backgr.   text    indicator 	child_border
+client.focused          #222d32f3 #222d32f3 #F8F8F2 #00bcd4f3   #282A36f3
+client.focused_inactive #4A148Cf3 #4A148Cf3 #F8F8F2 #484e50f3   #4A148Cf3
+client.unfocused        #282A36f3 #282A36f3 #888888 #292d2ef3   #222222f3
+client.urgent           #2f343a   #900000   #F8F8F2 #900000   	#900000
+client.placeholder      #000000   #0c0c0c   #F8F8F2 #000000   	#0c0c0c
 
 client.background       #ffffff
 
