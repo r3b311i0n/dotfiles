@@ -213,6 +213,9 @@ bindsym $mod+d exec --no-startup-id rofi -show run -config /home/r3b311i0n/.conf
 # compton
 exec --no-startup-id compton -bc --config /home/r3b311i0n/.config/compton/compton.conf
 
+# lock session
+bindsym $mod+ctrl+l exec --no-startup-id betterlockscreen --lock dimblur
+
 # clickpad
 # exec xinput set-prop 13 298 1
 # exec xinput set-prop 13 280 1
