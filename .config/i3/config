@@ -189,6 +189,9 @@ client.placeholder      #000000   #0c0c0c   #F8F8F2 #000000   	#0c0c0c
 
 client.background       #ffffff
 
+# Make window sticky
+bindsym $mod+Shift+s sticky toggle
+
 # backlight
 # bindsym XF86MonBrightnessDown exec light -U 10
 # bindsym XF86MonBrightnessUp exec light -A 10
