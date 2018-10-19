@@ -21,6 +21,8 @@ Plug 'w0rp/ale'
 Plug 'mattn/emmet-vim'
 Plug 'ervandew/supertab'
 Plug 'sbdchd/neoformat'
+" Plug 'dylanaraps/wal.vim'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 " deoplete stuff
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -113,6 +115,6 @@ set ignorecase
 set smartcase
 set incsearch
 set hlsearch
-set termguicolors
+" set termguicolors
 set hidden
-color molokai 
+color molokai
