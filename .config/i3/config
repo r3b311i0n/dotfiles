@@ -220,10 +220,8 @@ exec --no-startup-id compton -bc --config /home/r3b311i0n/.config/compton/compto
 bindsym $mod+ctrl+l exec --no-startup-id betterlockscreen --lock dimblur
 
 # clickpad
-exec --no-startup-id xinput set-prop 13 299 1
-exec --no-startup-id xinput set-prop 13 300 1
-exec --no-startup-id xinput set-prop 13 281 1
-exec --no-startup-id xinput set-prop 13 282 1
+exec --no-startup-id xinput set-prop SynPS/2\ Synaptics\ TouchPad "libinput Tapping Enabled" 1
+exec --no-startup-id xinput set-prop SynPS/2\ Synaptics\ TouchPad "libinput Natural Scrolling Enabled" 1
 
 # i3-gnome stuff
 # exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
