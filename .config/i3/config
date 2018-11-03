@@ -232,6 +232,6 @@ exec --no-startup-id xinput set-prop SynPS/2\ Synaptics\ TouchPad "libinput Natu
 # wallpaper
 exec --no-startup-id feh --bg-fill /home/r3b311i0n/Pictures/winPictures/Anime/wallhaven-320635.jpg
 
-# redshift
-exec --no-startup-id redshift
+# redshift (commented out because it doesn't get killed after logout)
+# exec --no-startup-id redshift
 
