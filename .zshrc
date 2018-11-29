@@ -68,7 +68,7 @@ COMPLETION_WAITING_DOTS="false"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(archlinux battery bundler cargo command-not-found colored-man-pages colorize cp docker docker-compose dotenv extract gem git-extras git github gitignore gnu-utils go gradle history-substring-search history httpie man ng node npm pip python react-native rsync rust screen shrink-path systemd zsh_reload)
+plugins=(archlinux battery bundler cargo colored-man-pages colorize cp docker docker-compose dotenv extract gem git-extras git github gitignore gnu-utils go gradle history-substring-search history httpie man ng node npm pip python react-native rsync rust screen shrink-path systemd zsh_reload)
 
 
 # User configuration
@@ -109,10 +109,6 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR='vim'
 export VISUAL='nvim'
-
-if [[ $TILIX_ID ]]; then
-        source /etc/profile.d/vte.sh
-fi
 
 # POWERLEVEL9K_MODE='awesome-fontconfig'
 
@@ -211,8 +207,10 @@ alias disgust-me="fortune limericks | cowsay"
 alias calvin="fortune calvin | cowsay"
 alias chuck="fortune chuck | cowsay"
 alias git-show-untracked="git ls-files . --exclude-standard --others"
-alias mpvx="mpv --gpu-context=auto"
+# alias mpvx="mpv --gpu-context=auto"
 alias slt-usage="source ~/.venv/bin/activate && slt && deactivate"
+alias night-light-on="gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true"
+alias night-light-off="gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false"
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -225,7 +223,11 @@ source /usr/share/zsh/plugins/emoji-cli/emoji-cli.zsh
 # zsh-autosuggestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=242"
+ZSH_AUTOSUGGEST_USE_ASYNC=true
 
 # zsh-syntax-highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# pkgfile command-not-found hook
+source /usr/share/doc/pkgfile/command-not-found.zsh
 
