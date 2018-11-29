@@ -1,10 +1,9 @@
-# Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
-setopt appendhistory nomatch
-unsetopt autocd beep
-# End of lines configured by zsh-newuser-install
+setopt appendhistory nomatch autocd
+unsetopt beep
+
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/r3b311i0n/.zshrc'
 
