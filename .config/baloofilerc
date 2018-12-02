@@ -1,0 +1,11 @@
+[Basic Settings]
+Indexing-Enabled=true
+
+[General]
+dbVersion=2
+exclude filters=.obj,moc_*.cpp,*.o,*.init,*.csproj,.histfile.*,*.faa,*.gbff,config.status,*.pyo,.yarn,*.moc,confdefs.h,*.pc,confstat,*.m4,nbproject,node_modules,*.fq,*.part,*.swap,*.pyc,.git,*.la,*.ini,*.orig,lost+found,cmake_install.cmake,*.rej,*.aux,*.po,*.fastq,CMakeFiles,CVS,.hg,CMakeTmpQmake,*.lo,*.fna,*.rcore,*.gmo,.npm,.moc,_darcs,.uic,*.gb,*.elc,po,autom4te,.xsession-errors*,*.class,*.tmp,__pycache__,.pch,*.fasta,*.so,ui_*.h,*.loT,litmain.sh,*.a,*.db,.yarn-cache,CMakeTmp,*.qmlc,core-dumps,conftest,CMakeCache.txt,lzo,qrc_*.cpp,CTestTestfile.cmake,Makefile.am,node_packages,*.vm*,*.omf,*.qrc,.bzr,*~,.svn,*.map,libtool,*.nvram,*.jsc
+exclude filters version=4
+exclude folders[$e]=$HOME/Android-SDK,$HOME/Documents/FontBase,$HOME/Documents/GitHub,$HOME/Games,/mnt/C,/mnt/D
+first run=false
+folders[$e]=$HOME,/mnt/C/Users/r3b31/Music,/mnt/C/Users/r3b31/Videos,/mnt/C/Users/r3b31/Pictures,/mnt/C/Users/r3b31/Documents
+only basic indexing=false
