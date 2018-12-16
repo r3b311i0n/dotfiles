@@ -203,7 +203,7 @@ mpd_crossfade_time = 3
 #song_list_format = {%a - }{%t}|{$8%f$9}$R{$3(%l)$9}
 #
 #song_status_format = {{%a{ "%b"{ (%y)}} - }{%t}}|{%f}
-song_status_format = " $b$7%a $2🠒  $6%b $2🠒  $8%t$/b "
+song_status_format = " $b$7%a $2➤  $6%b $2➤  $8%t$/b "
 #
 #song_library_format = {%n - }{%t}|{%f}
 #
