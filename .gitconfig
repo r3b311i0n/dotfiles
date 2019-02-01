@@ -1,7 +1,7 @@
 [user]
 	name = Amal Karunarathna
 	email = nasashinega@gmail.com
-	signingkey = 2101992856B7ACE0
+	signingkey = 964509B4CA5B1C8C
 [commit]
 	gpgsign = true
 [gpg]
@@ -16,3 +16,5 @@
 	branch = auto
 	interactive = auto
 	ui = auto
+[credential]
+	helper = /usr/lib/git-core/git-credential-libsecret
