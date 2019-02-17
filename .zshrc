@@ -11,7 +11,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:$HOME/.gem/ruby/2.5.0/bin:$HOME/.npm-global/bin:$HOME/Android-SDK/tools:$HOME/.cargo/bin:$HOME/.go/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:$HOME/.gem/ruby/2.6.0/bin:$HOME/.npm-global/bin:$HOME/Android-SDK/tools:$HOME/.cargo/bin:$HOME/.go/bin:$PATH
 
 export GOPATH=$HOME/.go
 
