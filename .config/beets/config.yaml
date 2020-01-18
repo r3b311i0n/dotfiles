@@ -36,3 +36,17 @@ zero:
         update_database: true
 discogs:
         user_token: <ACCESS_TOKEN_FROM_DISCOGS>
+convert:
+        format: flac
+        threads: 12
+        embed: yes
+        formats:
+                flac_hr:
+                        command: ffmpeg -i $source -y -acodec flac -compression_level 8 -sample_fmt s32 -ar 96000 $dest
+                        extension: flac
+                wave: 
+                        command: ffmpeg -i $source -y -acodec pcm_s16le $dest
+                        extension: wav
+                wvunpack:
+                        command: wvunpack -q $source -o $dest
+                        extension: wav
