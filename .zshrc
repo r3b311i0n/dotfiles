@@ -211,6 +211,7 @@ alias slt-usage="source ~/.venv/bin/activate && slt && deactivate"
 alias night-light-on="gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true"
 alias night-light-off="gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false"
 alias mpv-svp="mpv --profile=svp"
+alias mpv-dm="MESA_LOADER_DRIVER_OVERRIDE=i965 mpv --ytdl-format=hls-240-0"
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
