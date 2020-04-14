@@ -160,6 +160,7 @@ export REACT_EDITOR='gedit'
 
 # source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
 
+SPACESHIP_CHAR_SYMBOL='➢  '
 SPACESHIP_EXIT_CODE_SHOW=true
 SPACESHIP_DIR_TRUNC=0
 SPACESHIP_BATTERY_SHOW='low'
@@ -188,7 +189,7 @@ SPACESHIP_PROMPT_ORDER=(
   pyenv         # Pyenv section
   dotnet        # .NET section
   ember         # Ember.js section
-  kubecontext   # Kubectl context section
+  kubectl       # Kubectl context section
   exec_time     # Execution time
   line_sep      # Line break
   vi_mode       # Vi-mode indicator
