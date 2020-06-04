@@ -1,7 +1,7 @@
 [user]
-	name = Amal Karunarathna
+	name = Amal Shasthree Karunarathna
 	email = nasashinega@gmail.com
-	signingkey = 964509B4CA5B1C8C
+	signingkey = 09FE8E3E3725865C
 [commit]
 	gpgsign = true
 [gpg]
@@ -18,3 +18,8 @@
 	ui = auto
 [credential]
 	helper = /usr/lib/git-core/git-credential-libsecret
+[merge "npm-merge-driver"]
+	name = automatically merge npm lockfiles
+	driver = npx npm-merge-driver merge %A %O %B %P
+[pull]
+	rebase = true
