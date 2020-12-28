@@ -1,0 +1,42 @@
+theme = "native"
+icons = "awesome5"
+
+[[block]]
+block = "focused_window"
+max_width = 110
+
+[[block]]
+block = "custom"
+cycle = ["echo 🙂"]
+on_click = "rofimoji -c -s neutral"
+interval = "once"
+
+[[block]]
+block = "custom"
+cycle = ["echo 🗒"]
+on_click = "rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'"
+interval = "once"
+
+[[block]]
+block = "backlight"
+
+[[block]]
+block = "battery"
+interval = 10
+format = "{percentage}% {time}"
+
+[[block]]
+block = "networkmanager"
+on_click = "termite -e nmtui"
+primary_only = true
+device_format = "{icon} {ap}"
+
+[[block]]
+block = "sound"
+max_vol = 100
+
+[[block]]
+block = "time"
+interval = 60
+format = "%a %d/%m %R"
+

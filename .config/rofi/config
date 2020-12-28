@@ -1,4 +1,1 @@
-rofi.combi-modi:    window,drun,ssh                                                                                                                                                               
-rofi.font:          PragmataPro 16
-rofi.modi:          combi 
-rofi.theme: /usr/share/rofi/themes/Adapta-Nokto.rasi
+rofi.theme: /usr/share/rofi/themes/Paper.rasi

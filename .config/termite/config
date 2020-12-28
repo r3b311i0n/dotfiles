@@ -1,11 +1,13 @@
 [options]
 allow_bold = true
 #audible_bell = false
-#clickable_url = true
+bold_is_bright = true
+cell_height_scale = 1.0
+#cell_width_scale = 1.0
+clickable_url = true
 #dynamic_title = true
-font = Operator Mono SSm Book 11
+font = Iosevka Term 12
 #fullscreen = true
-#geometry = 640x480
 #icon_name = terminal
 #mouse_autohide = false
 #scroll_on_output = false
@@ -15,7 +17,7 @@ font = Operator Mono SSm Book 11
 scrollback_lines = 10000
 #search_wrap = true
 #urgent_on_bell = true
-hyperlinks = false
+hyperlinks = true
 
 # $BROWSER is used by default if set, with xdg-open as a fallback
 #browser = xdg-open
@@ -36,40 +38,53 @@ hyperlinks = false
 #size_hints = false
 
 # "off", "left" or "right"
-scrollbar = off
+#scrollbar = off
 
 [colors]
 # If both of these are unset, cursor falls back to the foreground color,
 # and cursor_foreground falls back to the background color.
 #cursor = #dcdccc
 #cursor_foreground = #dcdccc
-
-foreground = #f8f8f2
-foreground_bold = #f8f8f2
-#background = #282a36
-
-background = rgba(40, 42, 54, 0.97)
+foreground      = #d0d0d0
+foreground_bold = #d0d0d0
+cursor          = #d0d0d0
+background      = rgba(21, 21, 21, 0.95)
 
 # If unset, will reverse foreground and background
-#highlight = #2f2f2f
+highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
-color0 = #000000
-color1 = #ff5555
-color2 = #50fa7b
-color3 = #f1fa8c
-color4 = #bd93f9
-color5 = #ff79c6
-color6 = #8be9fd
-color7 = #bfbfbf
-color8 = #4d4d4d
-color9 = #ff6e67
-color10 = #5af78f
-color11 = #f4f99d
-color12 = #caa9fa
-color13 = #ff92d0
-color14 = #9aedfe
-color15 = #e6e6e6
+# black
+color0  = #151515
+color8  = #505050
+
+# red
+color1  = #ac4142
+color9  = #ac4142
+
+# green
+color2  = #90a959
+color10 = #90a959
+
+# yellow
+color3  = #f4bf75
+color11 = #f4bf75
+
+# blue
+color4  = #6a9fb5
+color12 = #6a9fb5
+
+# magenta
+color5  = #aa759f
+color13 = #aa759f
+
+# cyan
+color6  = #75b5aa
+color14 = #75b5aa
+
+# white
+color7  = #d0d0d0
+color15 = #f5f5f5
 
 [hints]
 #font = Monospace 12
