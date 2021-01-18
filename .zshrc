@@ -23,7 +23,7 @@ ZSH=/usr/share/oh-my-zsh/
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
+# ZSH_THEME="spaceship"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -109,98 +109,47 @@ export EDITOR='vim'
 export VISUAL='nvim'
 export REACT_EDITOR='gedit'
 
-# POWERLEVEL9K_MODE='awesome-fontconfig'
-
-# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status background_jobs root_indicator os_icon context dir rbenv virtualenv vcs)
-# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time time)
-# ## POWERLEVEL9K_TIME_FORMAT="%D{%H:%M \uE868  %d.%m.%y}"
-# POWERLEVEL9K_SHORTEN_STRATEGY=truncate_middle
-# ## POWERLEVEL9K_SHORTEN_DIR_LENGTH=5
-# ## POWERLEVEL9K_STATUS_OK_BACKGROUND='green'
-# ## POWERLEVEL9K_STATUS_OK_FOREGROUND='black'
-# ## POWERLEVEL9K_STATUS_ERROR_FOREGROUND='black'
-# DEFAULT_USER=$USER
-# ## POWERLEVEL9K_COLOR_SCHEME='light'
-
-# ## POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-# ## POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%{%F{249}%}\u250f"
-# ## POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%{%F{249}%}\u2517%{%F{default}%}❯ "
-# POWERLEVEL9K_VCS_STAGED_ICON="\u00b1"
-# POWERLEVEL9K_VCS_UNTRACKED_ICON="\u25CF"
-# POWERLEVEL9K_VCS_UNSTAGED_ICON="\u00b1"
-# POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON="\u2193"
-# POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON="\u2191"
-# POWERLEVEL9K_SHOW_CHANGESET="true"
-# POWERLEVEL9K_CHANGESET_HASH_LENGTH="12"
-# POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND="clear"
-# POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND="white"
-# POWERLEVEL9K_TIME_BACKGROUND="clear"
-# POWERLEVEL9K_TIME_FOREGROUND="white"
-# POWERLEVEL9K_TIME_FORMAT="%D{\uf017 %H:%M}"
-# ## POWERLEVEL9K_DIR_HOME_BACKGROUND="clear"
-# ## POWERLEVEL9K_DIR_HOME_FOREGROUND="white"
-# ## POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="clear"
-# ## POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="white"
-# POWERLEVEL9K_DIR_DEFAULT_BACKGROUND="white"
-# POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="black"
-# POWERLEVEL9K_LINUX_ICON='\uf300'
-# ## POWERLEVEL9K_OS_ICON_BACKGROUND="clear"
-# ## POWERLEVEL9K_OS_ICON_FOREGROUND="blue"
-# POWERLEVEL9K_STATUS_VERBOSE="true"
-# POWERLEVEL9K_STATUS_OK_BACKGROUND="clear"
-# POWERLEVEL9K_STATUS_OK_FOREGROUND="green"
-# POWERLEVEL9K_STATUS_ERROR_BACKGROUND="clear"
-# POWERLEVEL9K_STATUS_ERROR_FOREGROUND="red"
-# POWERLEVEL9K_ROOT_INDICATOR_BACKGROUND="red"
-# POWERLEVEL9K_ROOT_INDICATOR_FOREGROUND="white"
-
-# ## POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR="\ue26d"
-# ## POWERLEVEL9K_VCS_GIT_GITHUB_ICON="\ue80c"
-# POWERLEVEL9K_VCS_GIT_BITBUCKET_ICON="\ue267"
-
-# source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
-
-SPACESHIP_CHAR_SYMBOL='➢  '
-SPACESHIP_EXIT_CODE_SHOW=true
-SPACESHIP_DIR_TRUNC=0
-SPACESHIP_BATTERY_SHOW='low'
-SPACESHIP_TIME_SHOW=false
-SPACESHIP_PROMPT_ORDER=(
-  user          # Username section
-  dir           # Current directory section
-  host          # Hostname section
-  git           # Git section (git_branch + git_status)
-  hg            # Mercurial section (hg_branch  + hg_status)
-  package       # Package version
-  node          # Node.js section
-  ruby          # Ruby section
-  elixir        # Elixir section
-  xcode         # Xcode section
-  swift         # Swift section
-  golang        # Go section
-  php           # PHP section
-  rust          # Rust section
-  haskell       # Haskell Stack section
-  julia         # Julia section
-  docker        # Docker section
-  aws           # Amazon Web Services section
-  venv          # virtualenv section
-  conda         # conda virtualenv section
-  pyenv         # Pyenv section
-  dotnet        # .NET section
-  ember         # Ember.js section
-  kubectl       # Kubectl context section
-  exec_time     # Execution time
-  line_sep      # Line break
-  vi_mode       # Vi-mode indicator
-  jobs          # Backgound jobs indicator
-  exit_code     # Exit code section
-  char          # Prompt character
-)
-SPACESHIP_RPROMPT_ORDER=(
-  time
-  battery
-)
+# SPACESHIP_CHAR_SYMBOL='➢  '
+# SPACESHIP_EXIT_CODE_SHOW=true
+# SPACESHIP_DIR_TRUNC=0
+# SPACESHIP_BATTERY_SHOW='low'
+# SPACESHIP_TIME_SHOW=false
+# SPACESHIP_PROMPT_ORDER=(
+#   user          # Username section
+#   dir           # Current directory section
+#   host          # Hostname section
+#   git           # Git section (git_branch + git_status)
+#   hg            # Mercurial section (hg_branch  + hg_status)
+#   package       # Package version
+#   node          # Node.js section
+#   ruby          # Ruby section
+#   elixir        # Elixir section
+#   xcode         # Xcode section
+#   swift         # Swift section
+#   golang        # Go section
+#   php           # PHP section
+#   rust          # Rust section
+#   haskell       # Haskell Stack section
+#   julia         # Julia section
+#   docker        # Docker section
+#   aws           # Amazon Web Services section
+#   venv          # virtualenv section
+#   conda         # conda virtualenv section
+#   pyenv         # Pyenv section
+#   dotnet        # .NET section
+#   ember         # Ember.js section
+#   kubectl       # Kubectl context section
+#   exec_time     # Execution time
+#   line_sep      # Line break
+#   vi_mode       # Vi-mode indicator
+#   jobs          # Backgound jobs indicator
+#   exit_code     # Exit code section
+#   char          # Prompt character
+# )
+# SPACESHIP_RPROMPT_ORDER=(
+#   time
+#   battery
+# )
 
 alias cls="colorls -r"
 alias disgust-me="fortune limericks | cowsay"
@@ -256,6 +205,9 @@ load-nvmrc() {
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+
+# starship
+eval "$(starship init zsh)"
 
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
