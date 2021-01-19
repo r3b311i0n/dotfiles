@@ -126,4 +126,5 @@ set hlsearch
 set t_Co=256
 set cursorline
 set hidden
+set nu
 color onehalfdark
