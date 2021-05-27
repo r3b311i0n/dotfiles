@@ -11,12 +11,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:$HOME/.gem/ruby/2.6.0/bin:$HOME/Android-SDK/tools:$HOME/.cargo/bin:$HOME/.go/bin:$PATH
-
-export GOPATH=$HOME/.go
-
-export ANDROID_HOME=$HOME/Android-SDK
-
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
 
@@ -105,10 +99,6 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 
-export EDITOR='vim'
-export VISUAL='nvim'
-export REACT_EDITOR='gedit'
-
 # SPACESHIP_CHAR_SYMBOL='➢  '
 # SPACESHIP_EXIT_CODE_SHOW=true
 # SPACESHIP_DIR_TRUNC=0
@@ -162,8 +152,7 @@ alias night-light-on="gsettings set org.gnome.settings-daemon.plugins.color nigh
 alias night-light-off="gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false"
 alias mpv-svp="mpv --profile=svp"
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+# pyenv
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
@@ -177,10 +166,6 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # pkgfile command-not-found hook
 source /usr/share/doc/pkgfile/command-not-found.zsh
-
-# less syntax highlighting
-export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
-export LESS=' -R '
 
 # nvm
 source /usr/share/nvm/init-nvm.sh
