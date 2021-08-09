@@ -19,10 +19,9 @@ import:
         move: yes
         copy: no
         autotag: yes
-plugins: [mpdstats, embedart, fetchart, convert, info, chroma, fuzzy, zero, discogs]
+plugins: [mpdstats, embedart, fetchart, convert, info, chroma, fuzzy, zero, discogs, replaygain]
 replaygain:
-        backend: bs1770gain
-        method: ebu
+        backend: gstreamer
         r128: [Opus, MP3, FLAC, AAC, ALAC, Wave]
 embedart:
         ifempty: yes
