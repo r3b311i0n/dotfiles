@@ -28,7 +28,6 @@ Plug 'cespare/vim-toml'
 
 " deoplete stuff
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'fszymanski/deoplete-emoji'
 Plug 'Shougo/neopairs.vim'
 Plug 'racer-rust/vim-racer'
 Plug 'wokalski/autocomplete-flow'
