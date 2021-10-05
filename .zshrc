@@ -60,7 +60,7 @@ ZSH_CUSTOM=$HOME/.config/oh-my-zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(adb archlinux battery cargo colored-man-pages colorize cp docker docker-compose dotenv extract gem git-extras git github gitignore gnu-utils gradle history-substring-search history httpie man node npm nvm pip python react-native rsync rust screen shrink-path systemd zsh_reload)
+plugins=(adb archlinux battery cargo colored-man-pages colorize cp docker docker-compose dotenv extract gem git-extras git github gitignore gnu-utils gradle history-substring-search history httpie man node npm nvm pip python react-native rsync rust screen shrink-path systemd)
 
 
 # User configuration
