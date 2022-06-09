@@ -1,47 +1,4 @@
-call plug#begin('~/.local/share/nvim/plugged')
-
-Plug 'scrooloose/nerdcommenter'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'ianks/vim-tsx'
-Plug 'reasonml-editor/vim-reason-plus'
-" Plug 'scrooloose/syntastic'
-Plug 'junegunn/vim-github-dashboard'
-Plug 'scrooloose/nerdtree'
-" Plug 'dracula/vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-" Plug 'tomasr/molokai'
-Plug 'ap/vim-css-color'
-" Plug 'morhetz/gruvbox'
-Plug 'mhinz/vim-startify'
-Plug 'w0rp/ale'
-Plug 'mattn/emmet-vim'
-Plug 'ervandew/supertab'
-Plug 'sbdchd/neoformat'
-" Plug 'dylanaraps/wal.vim'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
-Plug 'cespare/vim-toml'
-
-" deoplete stuff
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'Shougo/neopairs.vim'
-Plug 'racer-rust/vim-racer'
-Plug 'wokalski/autocomplete-flow'
-Plug 'fishbullet/deoplete-ruby'
-Plug 'Shougo/neosnippet'
-Plug 'Shougo/neosnippet-snippets'
-Plug 'zchee/deoplete-jedi'
-Plug 'mhartington/nvim-typescript'
-Plug 'HerringtonDarkholme/yats.vim'
-" ternjs
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
-
-call plug#end()
-
+lua require('plugins')
 
 " NERD Commenter
 " Add spaces after comment delimiters by default
@@ -59,7 +16,6 @@ let g:javascript_plugin_jsdoc = 1
 " Syntax highlighting for NGDocs
 let g:javascript_plugin_ngdoc = 1
 
-
 " deoplete
 let g:deoplete#enable_at_startup = 1
 let g:neosnippet#enable_completed_snippet = 1
@@ -69,7 +25,6 @@ let g:deoplete#sources#ternjs#filetypes = [
                 \ 'javascript.jsx',
                 \ 'vue'
                 \ ]
-
 
 " " syntastic
 " set statusline+=%#warningmsg#
@@ -95,13 +50,6 @@ let g:github_dashboard = { 'username': 'r3b311i0n', 'password': '2ff40fb3abed9c6
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" vim-airline
-let g:airline_powerline_fonts=1
-let g:airline_theme='onehalfdark'
-
-" ale
-let g:airline#extensions#ale#enabled=1
-
 " molokai theme original bg colour
 " let g:molokai_original = 0
 " let g:rehash256 = 1
@@ -112,9 +60,9 @@ let g:airline#extensions#ale#enabled=1
 " set background=dark
 
 if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
+	let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+	let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+	set termguicolors
 endif
 
 syntax on
@@ -126,4 +74,8 @@ set t_Co=256
 set cursorline
 set hidden
 set nu
-color onehalfdark
+set tabstop=4
+set shiftwidth=4
+set expandtab
+" color onehalfdark
+
