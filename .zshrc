@@ -125,6 +125,10 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # pkgfile command-not-found hook
 source /usr/share/doc/pkgfile/command-not-found.zsh
 
+# zellij
+eval "$(zellij setup --generate-auto-start zsh)"
+
+
 # nvm
 source /usr/share/nvm/init-nvm.sh
 
@@ -151,8 +155,4 @@ load-nvmrc
 
 # starship
 eval "$(starship init zsh)"
-
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
-fi
 
