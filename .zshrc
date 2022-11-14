@@ -126,8 +126,13 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/doc/pkgfile/command-not-found.zsh
 
 # zellij
-eval "$(zellij setup --generate-auto-start zsh)"
-
+load-zellij() {
+  local terminal_emulator=$(basename "$(cat "/proc/$PPID/comm")")
+  if [ "$terminal_emulator" != "java" ]; then
+    eval "$(zellij setup --generate-auto-start zsh)"
+  fi
+}
+load-zellij
 
 # nvm
 source /usr/share/nvm/init-nvm.sh
