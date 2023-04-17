@@ -122,8 +122,8 @@ ZSH_AUTOSUGGEST_USE_ASYNC="true"
 # zsh-syntax-highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# pkgfile command-not-found hook
-source /usr/share/doc/pkgfile/command-not-found.zsh
+# find-the-command hook
+source /usr/share/doc/find-the-command/ftc.zsh
 
 # zellij
 load-zellij() {
