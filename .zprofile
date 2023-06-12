@@ -6,10 +6,9 @@ export GOPATH="$HOME/.go"
 export ANDROID_HOME="$HOME/Android-SDK"
 
 export EDITOR='vim'
-export VISUAL='nvim'
-export REACT_EDITOR='gedit'
+export VISUAL='helix'
+export REACT_EDITOR='gnome-text-editor'
 
 # less syntax highlighting
 export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
 export LESS=' -R '
-
