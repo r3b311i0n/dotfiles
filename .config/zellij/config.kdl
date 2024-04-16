@@ -165,10 +165,17 @@ keybinds {
 }
 
 plugins {
-    tab-bar { path "tab-bar"; }
-    status-bar { path "status-bar"; }
-    strider { path "strider"; }
-    compact-bar { path "compact-bar"; }
+    tab-bar location="zellij:tab-bar"
+    status-bar location="zellij:status-bar"
+    strider location="zellij:strider"
+    compact-bar location="zellij:compact-bar"
+    session-manager location="zellij:session-manager"
+    welcome-screen location="zellij:session-manager" {
+        welcome_screen true
+    }
+    filepicker location="zellij:strider" {
+        cwd "/"
+    }
 }
 
 ui {
@@ -207,7 +214,7 @@ pane_frames true
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "dracula"
+theme "catppuccin-macchiato"
 
 // The name of the default layout to load on startup
 // Default: "default"
