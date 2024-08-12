@@ -128,7 +128,7 @@ source /usr/share/doc/find-the-command/ftc.zsh
 # zellij
 load-zellij() {
   local terminal_emulator=$(basename "$(cat "/proc/$PPID/comm")")
-  if [ "$terminal_emulator" != "java" ]; then
+  if [ "$terminal_emulator" != "intellij-idea-u" ]; then
     eval "$(zellij setup --generate-auto-start zsh)"
   fi
 }
