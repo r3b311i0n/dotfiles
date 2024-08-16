@@ -12,3 +12,5 @@ export REACT_EDITOR='gnome-text-editor'
 # less syntax highlighting
 export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
 export LESS=' -R '
+
+export PATH="/home/r3b311i0n/.local/share/solana/install/active_release/bin:$PATH"
