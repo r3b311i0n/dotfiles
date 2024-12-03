@@ -102,7 +102,6 @@ source $ZSH/oh-my-zsh.sh
 alias cls="colorls -r"
 alias disgust-me="fortune limericks | cowsay"
 alias calvin="fortune calvin | cowsay"
-alias chuck="fortune chuck | cowsay"
 alias git-show-untracked="git ls-files . --exclude-standard --others"
 # alias mpvx="mpv --gpu-context=auto"
 alias slt-usage="source ~/.venv/bin/activate && slt && deactivate"
