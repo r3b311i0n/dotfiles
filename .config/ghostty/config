@@ -1,0 +1,9 @@
+theme = Aurora
+font-family = "Cascadia Code NF"
+font-size = 12
+adjust-cell-height = 1
+window-height = 52
+window-width = 212
+bold-is-bright = true
+window-decoration = false
+keybind = ctrl+shift+w=toggle_window_decorations
