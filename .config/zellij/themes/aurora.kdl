@@ -1,0 +1,15 @@
+themes {
+    aurora {
+        fg "#FFCA28"
+        bg "#232E2E"
+        black "#232E2E"
+        red "#F026F0"
+        green "#8FD46D"
+        yellow "#FFE66D"
+        blue "#02D7B8"
+        magenta "#EE5D43"
+        cyan "#02D6B8"
+        white "#C74DED"
+        orange "#FFCA28"
+    }
+}
