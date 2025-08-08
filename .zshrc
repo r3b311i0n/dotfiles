@@ -129,7 +129,8 @@ load-zellij() {
   local terminal_emulator=$(basename "$(cat "/proc/$PPID/comm")")
   if [ "$terminal_emulator" != "idea" ] && \
      [ "$terminal_emulator" != "intellij-idea-u" ] && \
-     [ "$terminal_emulator" != "cursor" ]; then
+     [ "$terminal_emulator" != "cursor" ] && \
+     [ "$terminal_emulator" != "electron" ]; then
     eval "$(zellij setup --generate-auto-start zsh)"
   fi
 }
